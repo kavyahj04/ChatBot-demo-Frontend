@@ -48,9 +48,12 @@ export default function App(){
     }
   }
 
-  const handleEndChat = () => {
-    alert("redirection to survey soon.");
-  }
+const handleEndChat = () => {
+  const pid = prolificId;
+  const sid = sessionId;
+  window.location.href = `https://binghamton.qualtrics.com/jfe/form/SV_a4v7DcbzU6gc0Ga?PROLIFIC_PID=${pid}&SESSION_ID=${sid}&chat_session_id=${chatSessionId}`;
+}
+  
 
   useEffect(() => {
 
